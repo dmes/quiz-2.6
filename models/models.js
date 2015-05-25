@@ -46,6 +46,7 @@ exports.User= User;
 Quiz.belongsTo(User);
 User.hasMany(Quiz);
 
+
 // sequelize.sync() inicializa tabla de preguntas en DB
 sequelize.sync().then(function() {
   // then(..) ejecuta el manejador una vez creada la tabla
