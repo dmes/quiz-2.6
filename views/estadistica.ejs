@@ -1,0 +1,27 @@
+<h3> Estadistica de Quiz</h3>
+
+<% var cp = 0; var i; for(i = 0; i< quizes.length; i++) {%> 
+<% cp ++; %>
+<% } %>
+
+<p>- Número de preguntas: <%= cp %></p>
+
+<% var cc = 0; var i; %>
+<%for(i = 0; i< comment.length; i++) {%> 
+<% cc ++; %>
+<% } %>
+
+<p>- Número de comentarios totales: <%= cc%></p>
+
+ <% var media = cc/cp; %>
+
+<p>- Número de comentarios medio por pregunta: <%= media%></p>
+
+
+<% var ncon= 0;  for (i= 0; i< quiz.length; i++) { %>
+  <% ncon ++; %>  
+  <% } %> 
+<p>- Número de preguntas sin comentarios: <%= ncon %></p>
+
+ <% var con = cp-ncon; %>
+<p>- Número de preguntas con comentarios: <%= con%></p>
